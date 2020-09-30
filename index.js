@@ -26,8 +26,8 @@ const client = new CommandoClient({
   commandPrefix: "?!",
   unknownCommandResponse: false,
   disableEveryone: false,
-  invite: "https://discord.gg/PWsa2c3",
-  owner: process.env.OWNERID
+  invite: "https://discord.gg/7Svth97",
+  owner: RacingPlayz#7084
 });
 
 client.on("message", message => {
