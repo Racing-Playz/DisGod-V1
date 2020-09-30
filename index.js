@@ -6,7 +6,7 @@ const Canvas = require("canvas");
 const chalk = require("chalk");
 const { MessageEmbed } = require("discord.js");
 const Discord = require('discord.js');
-const bot = new Discord.Client();
+const client = new Discord.Client();
 
 client.registry
   .registerDefaultTypes()
