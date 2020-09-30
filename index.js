@@ -17,7 +17,7 @@ client.registry
     ["special", "Special Commands"],
     ["misc", "Misc Commands"],
     ["music", "Music Commands"]
-  ])
+  ]);
   .registerDefaultGroups()
   .registerDefaultCommands()
   .registerCommandsIn(path.join(__dirname, "commands"));
