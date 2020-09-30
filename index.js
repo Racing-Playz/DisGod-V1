@@ -15,7 +15,7 @@ const client = new CommandoClient({
   disableEveryone: false,
   invite: "https://discord.gg/7Svth97",
   owner: "RacingPlayz#7084"
-})
+});
 client.on("message", message => {
   if (message.author.bot) return;
   if (message.content === "") return;
@@ -37,7 +37,7 @@ client.on("message", message => {
         .toLowerCase()
   );
   channel.send(embed);
-})
+});
 client.registry
   .registerDefaultTypes()
   .registerGroups([
@@ -116,4 +116,5 @@ process.on("uncaughtException", error =>
   console.log(chalk.redBright("[Uncaught Exception]"), error)
 );
 
+});
 client.login('NzIxMjQ3NzU3NzQyMTEyODU4.XuRwUQ.ZIjq7Q5IJynt48AE-0kb51gdx2o');
