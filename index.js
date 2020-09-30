@@ -7,6 +7,7 @@ const chalk = require("chalk");
 const { MessageEmbed } = require("discord.js");
 const Discord = require('discord.js');
 const client = new Discord.Client();
+const client = require("discord.js-commando"); 
 const client = new CommandoClient({
   commandPrefix: "?!",
   unknownCommandResponse: false,
