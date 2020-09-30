@@ -1,6 +1,3 @@
-/* eslint-disable no-undef */
-/* eslint-disable no-unused-vars */
-require("dotenv").config();
 const { CommandoClient } = require("discord.js-commando");
 const { Structures } = require("discord.js");
 const path = require("path");
@@ -8,6 +5,8 @@ const Keyv = require("keyv");
 const Canvas = require("canvas");
 const chalk = require("chalk");
 const { MessageEmbed } = require("discord.js");
+const Discord = require('discord.js');
+const bot = new Discord.Client();
 
 client.registry
   .registerDefaultTypes()
