@@ -16,8 +16,6 @@ const client = new CommandoClient({
   invite: "https://discord.gg/7Svth97",
   owner: "RacingPlayz#7084"
 });
-
-);
 client.registry
   .registerDefaultTypes()
   .registerGroups([
