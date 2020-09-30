@@ -14,7 +14,7 @@ const Commandoclient = require('commandoclient'({
   disableEveryone: false,
   invite: "https://discord.gg/7Svth97",
   owner: "721209316924719125"
-});
+})
 
 client.registry
   .registerDefaultTypes()
