@@ -8,18 +8,6 @@ const Keyv = require("keyv");
 const Canvas = require("canvas");
 const chalk = require("chalk");
 const { MessageEmbed } = require("discord.js");
-Structures.extend("Guild", Guild => {
-  class MusicGuild extends Guild {
-    constructor(client, data) {
-      super(client, data);
-      this.musicData = {
-        queue: [],
-        isPlaying: false,
-        songDispatcher: null
-    }
-  }
-  return MusicGuild;
-});
 
 const client = new CommandoClient({
   commandPrefix: "?!",
