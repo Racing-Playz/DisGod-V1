@@ -17,7 +17,7 @@ const client = new CommandoClient({
   owner: "RacingPlayz#7084"
 });
 
-});
+);
 client.registry
   .registerDefaultTypes()
   .registerGroups([
