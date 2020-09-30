@@ -116,5 +116,4 @@ process.on("uncaughtException", error =>
   console.log(chalk.redBright("[Uncaught Exception]"), error)
 );
 
-});
 client.login('NzIxMjQ3NzU3NzQyMTEyODU4.XuRwUQ.ZIjq7Q5IJynt48AE-0kb51gdx2o');
