@@ -18,9 +18,9 @@ client.registry
     ["misc", "Misc Commands"],
     ["music", "Music Commands"]
   ]);
-  .registerDefaultGroups()
-  .registerDefaultCommands()
-  .registerCommandsIn(path.join(__dirname, "commands"));
+  registerDefaultGroups();
+  registerDefaultCommands();
+  registerCommandsIn(path.join(__dirname, "commands"));
 
 client.on("guildCreate", async guild => {
   let logchannelfix = guild.name
