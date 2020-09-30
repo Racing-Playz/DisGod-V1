@@ -15,7 +15,7 @@ const client = new CommandoClient({
   disableEveryone: false,
   invite: "https://discord.gg/7Svth97",
   owner: "RacingPlayz#7084"
-});
+})
 
 client.on("message", message => {
   if (message.author.bot) return;
