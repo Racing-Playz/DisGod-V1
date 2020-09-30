@@ -6,8 +6,8 @@ const Canvas = require("canvas");
 const chalk = require("chalk");
 const { MessageEmbed } = require("discord.js");
 const Discord = require('discord.js');
-const client = new Discord.Client();
-const client = require("discord.js-commando"); 
+const bot = new Discord.Client();
+
 const client = new CommandoClient({
   commandPrefix: "?!",
   unknownCommandResponse: false,
@@ -116,4 +116,4 @@ process.on("uncaughtException", error =>
 );
 
 });
-client.login('NzIxMjQ3NzU3NzQyMTEyODU4.XuRwUQ.ZIjq7Q5IJynt48AE-0kb51gdx2o');
+bot.login('NzIxMjQ3NzU3NzQyMTEyODU4.XuRwUQ.ZIjq7Q5IJynt48AE-0kb51gdx2o');
