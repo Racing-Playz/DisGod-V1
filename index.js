@@ -16,7 +16,7 @@ Structures.extend("Guild", Guild => {
         queue: [],
         isPlaying: false,
         songDispatcher: null
-      };
+      }
     }
   }
   return MusicGuild;
