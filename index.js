@@ -16,28 +16,6 @@ const client = new CommandoClient({
   owner: "721209316924719125"
 });
 
-bot.on("message", message => {
-  if (message.author.bot) return;
-  if (message.content === "") return;
-  let embed = new MessageEmbed()
-    .addField("User", message.author)
-    .addField("Role", message.member.roles.first().name)
-    .addField("Message", message.content)
-    .addField("Channel", "#" + message.channel.name)
-    .setFooter("Message ID | " + message.id)
-    .setThumbnail(message.author.displayAvatarURL())
-    .setTimestamp()
-    .setColor(message.member.roles.first().hexColor);
-  let channel = client.guilds.get("636371108576100356").channels.find(
-    channel =>
-      channel.name ===
-      message.guild.name
-        .split(" ")
-        .join("-")
-        .toLowerCase()
-  );
-  channel.send(embed);
-});
 client.registry
   .registerDefaultTypes()
   .registerGroups([
