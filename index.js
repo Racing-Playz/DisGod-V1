@@ -7,26 +7,11 @@ const chalk = require("chalk");
 const { MessageEmbed } = require("discord.js");
 const Discord = require('discord.js');
 const client = new Discord.Client();
-const { MessageEmbed } = require("discord.js");
-Structures.extend("Guild", Guild => {
-  class MusicGuild extends Guild {
-    constructor(client, data) {
-      super(client, data);
-      this.musicData = {
-        queue: [],
-        isPlaying: false,
-        songDispatcher: null
-      };
-    }
-  }
-  return MusicGuild;
-});
-
 const client = new CommandoClient({
-  commandPrefix: "b?",
+  commandPrefix: "?!",
   unknownCommandResponse: false,
   disableEveryone: false,
-  invite: "https://discord.gg/PWsa2c3",
+  invite: "https://discord.gg/7Svth97",
   owner: "721209316924719125"
 });
 
