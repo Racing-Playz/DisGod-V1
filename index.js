@@ -23,7 +23,7 @@ Structures.extend("Guild", Guild => {
 });
 
 const client = new CommandoClient({
-  commandPrefix: "b?",
+  commandPrefix: "?!",
   unknownCommandResponse: false,
   disableEveryone: false,
   invite: "https://discord.gg/PWsa2c3",
