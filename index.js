@@ -8,13 +8,6 @@ const { MessageEmbed } = require("discord.js");
 const Discord = require('discord.js');
 const bot = new Discord.Client();
 const client = new CommandoClient();
-const Commandoclient = require('commandoclient'({
-  commandPrefix: "?!",
-  unknownCommandResponse: false,
-  disableEveryone: false,
-  invite: "https://discord.gg/7Svth97",
-  owner: "721209316924719125"
-})
 
 client.registry
   .registerDefaultTypes()
