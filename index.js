@@ -15,8 +15,9 @@ const client = new CommandoClient({
   disableEveryone: false,
   invite: "https://discord.gg/7Svth97",
   owner: "RacingPlayz#7084"
-})
+});
 
+});
 client.registry
   .registerDefaultTypes()
   .registerGroups([
@@ -57,7 +58,7 @@ client.on("guildCreate", async guild => {
           .catch(err => {});
       });
   }
-})
+});
 client.on("ready", () => {
   client.guilds.forEach(g => {
     let logchannelfix = g.name
