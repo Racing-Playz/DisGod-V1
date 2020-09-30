@@ -9,13 +9,6 @@ const Canvas = require("canvas");
 const chalk = require("chalk");
 const { MessageEmbed } = require("discord.js");
 
-const client = new CommandoClient({
-  commandPrefix: "?!",
-  unknownCommandResponse: false,
-  disableEveryone: false,
-  invite: "https://discord.gg/7Svth97",
-  owner: "RacingPlayz#7084"
-});
 client.registry
   .registerDefaultTypes()
   .registerGroups([
